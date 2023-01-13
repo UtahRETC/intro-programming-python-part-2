@@ -1,0 +1,13 @@
+#!/bin/bash
+
+IFSBAK=$IFS
+IFS=$(echo -en "\n\b")
+
+for input in $(find units -type f -not -name Overview.md -name '*.md')
+do
+  echo -n "Generating '$input' ... "
+  bin/gen "$input" "${input%.md}.pdf" &> /dev/null
+  echo "done"
+done
+
+IFS=$IFSBAK

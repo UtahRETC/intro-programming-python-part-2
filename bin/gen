@@ -1,0 +1,33 @@
+#!/bin/bash
+
+input="$1"
+output="$2"
+
+if [ ! -f "$input" ]; then
+  echo "error: <input> file not found ('$input')"
+  exit 1
+elif [ -z "$output" ]; then
+  echo "error: missing <output> argument"
+  exit 1
+fi
+
+case $(basename "$input") in
+  Slides.md)
+    marp "$input" \
+      --allow-local-files \
+      --theme assets/slide-styles.marp \
+      --html true \
+      --pdf true \
+      --output "$output"
+    ;;
+
+  *)
+    pandoc "$input" \
+      --resource-path="$(dirname "$input")" \
+      --from markdown-smart \
+      --highlight-style=assets/document-theme.theme \
+      -H assets/document-header.tex \
+      -V linkcolor=Blue \
+      -o "$output"
+    ;;
+esac
