@@ -1,0 +1,2 @@
+- [ ] Assignment for review week (unit 6) that uses conditionals, loops, and functions.
+- [ ] Assignments for Dictionaries section.
