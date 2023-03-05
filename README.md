@@ -10,9 +10,14 @@
 
 ### Unit 6: Class Introduction
 
-### Unit 7: Hashes
+This also covers a review of the last class.
+
+### Unit 7: Dictionaries
 
 ### Unit 8: Introduction to Flask
+
+Discuss imports, annotations. HTTP basics, like routing and methods, clients
+vs. servers.
 
 ### Unit 9: Classes
 
