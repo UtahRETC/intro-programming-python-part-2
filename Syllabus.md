@@ -36,20 +36,28 @@ Homework assignments will be assigned every week. Assignments should be submitte
 
 A minimum of 70% is required to pass this class. There are no tests or quizzes, grades are 100% based on homework assignments.
 
-\vspace{.3in}
+\begin{multicols}{2}
+\subsection{How can you succeed in this class?}
+\begin{itemize}
+\item Do your homework
+\item Write the code yourself, no copy/paste
+\item Run all of the code that you write
+\item Take notes
+\item Use Slack
+\item Ask questions
+\item Work with your classmates
+\end{itemize}
 
-\begin{center}
-\begin{tabular}{ l | l }
-\textbf{How can you succeed in this class?} & \textbf{How can you fail in this class?} \\
-• Do your homework & • You don't write code \\
-• Write the code yourself, no copy/paste & • You don't take notes \\
-• Run all of the code that you write & • You don't ask questions \\
-• Take notes \\
-• Use Slack \\
-• Ask questions \\
-• Work with your classmates
-\end{tabular}
-\end{center}
+\columnbreak
+
+\subsection{How can you fail in this class?}
+\begin{itemize}
+\item You don't write code
+\item You don't take notes
+\item You don't ask questions
+\end{itemize}
+\end{multicols}
+
 
 \pagebreak
 
