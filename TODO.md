@@ -1,2 +1,4 @@
-- [ ] Assignment for review week (unit 6) that uses conditionals, loops, and functions.
-- [ ] Assignments for Dictionaries section.
+- [x] First assignment for review week (unit 1) that uses conditionals, loops, and functions.
+- [ ] (br) Second assignment for review week (unit 1) that uses conditionals, loops, and functions.
+- [ ] (mm) Finish review slides
+- [ ] (mm) Rock paper scissors assignment
