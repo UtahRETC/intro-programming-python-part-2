@@ -61,7 +61,7 @@ A minimum of 70% is required to pass this class. There are no tests or quizzes, 
 
 \pagebreak
 
-## Outline
+## Outline *
 
 ### Unit 1: Class Introduction
 
@@ -106,3 +106,7 @@ recovering from errors.
 As projects grow in size and complexity, they are broken up into multiple
 files. In Python, each file of a program is module. We'll learn about how to
 create and work with our own modules.
+
+\vspace{.2in}
+
+\* _The order in which units are covered may change depending on how the class is progressing._
