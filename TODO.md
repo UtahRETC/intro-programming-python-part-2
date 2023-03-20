@@ -1,4 +1,5 @@
-- [x] First assignment for review week (unit 1) that uses conditionals, loops, and functions.
+- [x] (mm) First assignment for review week (unit 1) that uses conditionals, loops, and functions.
 - [ ] (br) Second assignment for review week (unit 1) that uses conditionals, loops, and functions.
-- [ ] (mm) Finish review slides
-- [ ] (mm) Rock paper scissors assignment
+- [x] (mm) Finish day 1 review slides
+- [ ] (mm) Finish day 2 review slides
+- [x] (mm) Rock paper scissors assignment

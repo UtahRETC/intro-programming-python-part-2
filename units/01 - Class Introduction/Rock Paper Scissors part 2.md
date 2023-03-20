@@ -2,7 +2,7 @@
 title: Rock Paper Scissors, part 2
 ---
 
-## Introduction
+## Overview
 
 In this assignment we will update the Rock Paper Scissors program from the
 previous assingment and add a game loop that allows the player to play multiple
