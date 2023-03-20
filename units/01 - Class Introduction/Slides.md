@@ -221,8 +221,8 @@ This course is divided into sections, each covering a new concept.
 - Input and output
 - Operators
 - Conditionals
-- Loops
 - Lists
+- Loops
 - Functions
 
 </span>
@@ -558,6 +558,109 @@ The condtion must
 ## The structure of `if` statements
 
 There can only be one `else` and it must go at the end.
+
+---
+
+# Lists
+
+---
+
+## Lists
+
+Lists are values.
+
+---
+
+## Lists
+
+Lists are values that contain multiple values within them.
+
+---
+
+## Lists
+
+Lists are containers of values.
+
+---
+
+## A list of strings
+
+```python
+top_drivers = [
+    "Max Verstappen",
+    "Charles Leclerc",
+    "Lewis Hamilton",
+    "George Russell",
+    "Lando Norris"
+]
+```
+
+---
+
+## Accessing items from a list
+
+Use the square brakets to access items from a list.
+
+---
+
+## Accessing items from a list, an example
+
+```python
+top_drivers = [
+    "Max Verstappen",
+    "Charles Leclerc",
+    "Lewis Hamilton",
+    "George Russell",
+    "Lando Norris"
+]
+
+top_drivers[0] # "Max Verstappen"
+top_drivers[1] # "Charles Leclerc"
+top_drivers[2] # "Lewis Hamilton"
+```
+
+---
+
+## Remember that...
+
+Remember that the first item in a list is in position 0.
+
+---
+
+## The index
+
+The position of an item is refered to as its "index" in a list.
+
+---
+
+## Adding and removing items from a list
+
+The `push` and `pop` methods are used to add and remove items.
+
+---
+
+## `push` and `pop`
+
+`push` adds an item to the end of the list.
+
+---
+
+## `push` and `pop`
+
+`pop` removes and returns the item from the end of the list.
+
+---
+
+## Hint: randomly picking an item from a list
+
+```python
+import random
+
+choices = ["rock", "paper", "scissors"]
+computers_choice = random.choice(choices)
+
+print("The computer chose " + computers_choice)
+```
 
 ---
 
