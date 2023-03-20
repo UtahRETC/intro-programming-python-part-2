@@ -78,7 +78,7 @@ Let's talk about the tools we'll use in the class.
 
 ## Zoom
 
-Monday meetings will be held over Zoom.
+Thursdays classes will be held over Zoom.
 
 ---
 
@@ -236,6 +236,16 @@ This course is divided into sections, each covering a new concept.
 ## What is it?
 
 Input is what allows users to interact with our programs.
+
+---
+
+## What is it?
+
+<span class="center narrower">
+
+Input allows information from the outside world to be used in our programs.
+
+</span>
 
 ---
 
@@ -441,7 +451,7 @@ Boolean operators allow us to create expressions that operate on multiple boolea
 
 <span class="center narrower">
 
-Conditionals allow parts of our program/code to run only when certain conditions are met.
+Conditionals allow parts of our code to run only when certain conditions are met.
 
 </span>
 
@@ -489,7 +499,17 @@ if user_won_the_game:
 
 ## The condition
 
-The condtion must 
+The condition should be a boolean expression.
+
+---
+
+## The condition should be a boolean expression
+
+<span class="center narrower">
+
+This means you can use any single boolean value, or an expression with operators that result in a boolean value.
+
+</span>
 
 ---
 
@@ -557,6 +577,12 @@ The condtion must
 
 ## The structure of `if` statements
 
+There can be many `elif` clauses in an `if` statement.
+
+---
+
+## The structure of `if` statements
+
 There can only be one `else` and it must go at the end.
 
 ---
@@ -599,7 +625,7 @@ top_drivers = [
 
 ## Accessing items from a list
 
-Use the square brakets to access items from a list.
+Use the square brackets to access items from a list.
 
 ---
 
@@ -629,7 +655,7 @@ Remember that the first item in a list is in position 0.
 
 ## The index
 
-The position of an item is refered to as its "index" in a list.
+The position of an item is referred to as its "index" in a list.
 
 ---
 
@@ -670,23 +696,23 @@ print("The computer chose " + computers_choice)
 
 ## Loops
 
-Loops allow parts of our program/code to run multiple times.
+Loops allow parts of our code to run multiple times.
 
 ---
 
 ## Loops
 
-Loops allow parts of our program/code to run zero or more times.
+Loops allow parts of our code to run zero or more times.
 
 ---
 
-## Two types of loops
+## Loops in Python
 
 `while` and `for`.
 
 ---
 
-## `while` loops
+## Loops in Python
 
 <span class="center narrower">
 
@@ -696,11 +722,68 @@ Loops allow parts of our program/code to run zero or more times.
 
 ---
 
-## `for` loops
+## Loops in Python
 
 <span class="center narrower">
 
 `for` are used to iterate (to loop over) over the items in a list.
+
+</span>
+
+---
+
+## `for` loop, an example
+
+```python
+driver_and_score_list = [
+    ["Max Verstappen", 454],
+    ["Charles Leclerc", 308],
+    ["Sergio Perez", 305],
+    ["George Russell", 275],
+    ["Carlos Sainz", 246],
+]
+
+for driver_info in driver_and_score_list:
+    print(driver_info[0] + " scored " + str(driver_info[1]) + " points")
+```
+
+---
+
+## `break` and `continue`
+
+<span class="center narrower">
+
+`break` and `continue` let us skip a single iteration or prevent a loop from running again.
+
+</span>
+
+---
+
+## `break`
+
+<span class="center narrower">
+
+`break` stops a loop, even if its condition is still true or there are more items to iterate through.
+
+</span>
+
+---
+
+## `break`
+
+<span class="center narrower">
+
+`break` is useful when we want to stop a loop early, or stop a loop that is running for ever (like `while True: ...`)
+
+</span>
+
+---
+
+## `continue`
+
+<span class="center narrower">
+
+`continue` stops the current iteration and "jumps" to the top of the loop. The loop continues if it can.
 
 </span>
 
