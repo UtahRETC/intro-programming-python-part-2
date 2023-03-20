@@ -18,7 +18,7 @@ footer: 'Unit 1: Class Introduction'
 
 ## Let's start with introductions
 
-<span class="centered wider">
+<span class="centered narrower">
 
 - Tell us your name,
 - An interest or a hobby,
@@ -31,7 +31,11 @@ footer: 'Unit 1: Class Introduction'
 
 ## What are we learning?
 
+<span class="center wide">
+
 This is a continuation of the Introduction to Programming with Python class, and we'll continue where we left off in that class and finish learning about basic concepts in modern programming and dive deeper into web programming.
+
+</span>
 
 ---
 
@@ -80,13 +84,21 @@ Monday meetings will be held over Zoom.
 
 ## Zoom
 
+<span class="center narrower">
+
 Zoom meetings will be recorded and made available in Canvas for you to watch whenever.
+
+</span>
 
 ---
 
 ## Zoom etiquette
 
+<span class="center narrower">
+
 When we meet using Zoom, please turn your <span class="underline bold">cameras on</span> and <span class="underline bold">mute yourself</span> after joining.
+
+</span>
 
 ---
 
@@ -116,14 +128,477 @@ All of the content related to this class will be in Canvas.
 
 ## Slack and Canvas
 
+<span class="center narrower">
+
 You should have received an invitation to Slack and to Canvas. Create your accounts if you haven't and let me know if you have any issues.
+
+</span>
 
 ---
 
 ## Visual Studio Code
 
+<span class="center narrower">
+
 Visual Studio Code, or VS Code, is a text editor. A text editor is a tool used to write code.
 
+</span>
+
 ---
+
+## Syllabus
+
+This course is divided into sections, each covering a new concept.
+
+---
+
+## Syllabus: sections
+
+
+<span class="centered wider">
+
+1. Class Introduction and review
+2. Dictionaries
+3. Introduction to Flask
+4. Classes
+5. File IO
+6. Error handling
+7. Modules
+
+</span>
+
+---
+
+## Syllabus: homework
+
+<span class="centered wider">
+
+- We'll have homework assignments every week
+- I'll specify when the assignment is due
+- Homework can be found in Canvas
+- Should be submitted through Canvas
+
+</span>
+
+---
+
+## How can you succeed in this class?
+
+<span class="centered wider">
+
+- Do your homework
+- Write the code yourself, no copy/paste
+- Run all of the code that you write
+- Take notes
+- Use Slack
+- Ask questions
+- Work with your classmates
+
+</span>
+
+---
+
+## How can you fail in this class?
+
+<span class="centered wider">
+
+- You don't write code
+- You don't take notes
+- You don't ask questions
+
+</span>
+
+---
+
+# Review
+
+---
+
+## Review topics
+
+<span class="centered wider">
+
+- Input and output
+- Operators
+- Conditionals
+- Loops
+- Lists
+- Functions
+
+</span>
+
+---
+
+# Input and output
+
+---
+
+## What is it?
+
+Input is what allows users to interact with our programs.
+
+---
+
+## How do we do it?
+
+<span class="center narrower">
+
+We use the `input` function to get what the user typed into their computers.
+
+</span>
+
+---
+
+## Remember that...
+
+<span class="center narrower">
+
+Remember that the `input` function always returns a `string`, even if the user typed a number.
+
+</span>
+
+---
+
+## Converting strings
+
+<span class="center narrower">
+
+But we can use `int` and `float` to convert strings to integer and real numbers.
+
+</span>
+
+---
+
+## What is it?
+
+Output is how we are able to show data to the user.
+
+---
+
+## How do we do it?
+
+We use the `print` function to print a string to the terminal screen.
+
+---
+
+## Input and output, an example
+
+```python
+user_input = input("What is your age? ")
+user_age = int(user_input)
+
+print("Next year you will be " + str(user_age + 1))
+```
+
+---
+
+# Operators
+
+---
+
+## Operators
+
+<span class="centered wider">
+
+- Arithmetic operators
+- Equality operators
+- Comparison operators
+- Boolean operators
+
+</span>
+
+---
+
+## Operators
+
+Different types of operators let us do different things.
+
+---
+
+## Arithmetic operators
+
+Arithmetic operators allow us to perform basic arithmetic.
+
+---
+
+## Arithmetic operators
+
+Arithmetic operators return a number (an integer or float).
+
+---
+
+## Arithmetic operators, an example
+
+```python
+race_time = 60.34
+penalty_time = 10
+
+total_time = race_time + penalty_time
+```
+
+---
+
+## List of arithmetic operators
+
+<span class="centered wider">
+
+- `*`, multiplication
+- `%`, modulo
+- `/`, floating point number division
+    - `10 / 3` results in `3.3333333333333335`
+- `//`, integer number division
+    - `10 // 3` results in `3`
+- `+`, addition
+- `-`, subtraction
+
+</span>
+
+---
+
+## Equality operators
+
+<span class="center narrower">
+
+Equality operators allow us to compare whether two values are equal to each other (or not equal to each other).
+
+</span>
+
+---
+
+## Equality operators
+
+Equality operators return booleans (`True` or `False`)
+
+---
+
+## List of equality operators
+
+<span class="centered wider">
+
+- `=`, equal to
+- `!=`, not equal to
+
+</span>
+
+---
+
+## Comparison operators
+
+<span class="center narrower">
+
+Comparison operators help us determine when a value is greater than or less than another value.
+
+</span>
+
+---
+
+## Comparison operators
+
+Comparison operators return booleans (`True` or `False`)
+
+---
+
+## List of comparison operators
+
+<span class="centered wider">
+
+- `>`, greater than
+- `>=`, greater than or equal to
+- `<`, less than
+- `<=`, less than or equal to
+
+</span>
+
+---
+
+## Boolean operators
+
+<span class="center narrower">
+
+Boolean operators allow us to create expressions that operate on multiple boolean values with a single result.
+
+</span>
+
+---
+
+## List of boolean operators
+
+<span class="centered wider">
+
+- `and`, both sides must be `True`
+- `or`, one of the sides must be `True`
+- `not`, the result is negated
+
+</span>
+
+---
+
+# Conditionals
+
+---
+
+## Conditionals
+
+<span class="center narrower">
+
+Conditionals allow parts of our program/code to run only when certain conditions are met.
+
+</span>
+
+---
+
+## For example...
+
+<span class="center narrower">
+
+For example, when we detect that a user has won the game, we can print a message to the screen and stop the program.
+
+</span>
+
+---
+
+## `if` statements
+
+Python has the `if` statement.
+
+---
+
+## `if` statements
+
+<span class="center narrower">
+
+`if` statements need a condition and an indented block of code which runs when the condition is `True`.
+
+</span>
+
+---
+
+## Conditionals, an example
+
+```python
+# ...
+
+if user_won_the_game:
+    print("Congrats, you win!")
+    stop_game = True
+
+# ...
+```
+
+---
+
+## The condition
+
+The condtion must 
+
+---
+
+## `elif` and `else` clauses
+
+<span class="center">
+
+`if` statements can be extended with `elif` and `else` clauses.
+
+</span>
+
+---
+
+## `elif`
+
+<span class="center narrower">
+
+`elif` clauses also need a condition and an indented block of code to run when the condition is `True`.
+
+</span>
+
+---
+
+## `elif`
+
+<span class="center narrower">
+
+`elif` clauses only run when the previous `if` and `elif` conditions are all false.
+
+</span>
+
+---
+
+## `else`
+
+<span class="center narrower">
+
+`else` clauses do not need a condition, but they do need an indented block of code to run.
+
+</span>
+
+---
+
+## `else`
+
+<span class="center narrower">
+
+`else` clauses are the "default" option and only run when the previous `if` and `elif` conditions are all false.
+
+</span>
+
+---
+
+## The structure of `if` statements
+
+`if` statements must start with the `if` keyword.
+
+---
+
+## The structure of `if` statements
+
+`elif` and `else` are optional.
+
+---
+
+## The structure of `if` statements
+
+There can only be one `else` and it must go at the end.
+
+---
+
+# Loops
+
+---
+
+## Loops
+
+Loops allow parts of our program/code to run multiple times.
+
+---
+
+## Loops
+
+Loops allow parts of our program/code to run zero or more times.
+
+---
+
+## Two types of loops
+
+`while` and `for`.
+
+---
+
+## `while` loops
+
+<span class="center narrower">
+
+`while` loops run for as long as the condition they have been given is `True`.
+
+</span>
+
+---
+
+## `for` loops
+
+<span class="center narrower">
+
+`for` are used to iterate (to loop over) over the items in a list.
+
+</span>
 
 ---
