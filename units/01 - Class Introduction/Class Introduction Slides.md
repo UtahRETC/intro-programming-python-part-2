@@ -385,7 +385,7 @@ Equality operators return booleans (`True` or `False`)
 
 <span class="centered wider">
 
-- `=`, equal to
+- `==`, equal to
 - `!=`, not equal to
 
 </span>
