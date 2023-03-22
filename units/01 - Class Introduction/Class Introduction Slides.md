@@ -612,7 +612,7 @@ Lists are containers of values.
 ## A list of strings
 
 ```python
-top_drivers = [
+driver_list = [
     "Max Verstappen",
     "Charles Leclerc",
     "Lewis Hamilton",
@@ -626,12 +626,12 @@ top_drivers = [
 ## A list of integers
 
 ```python
-top_scores = [
-    322,
-    289,
-    152,
-    90,
-    88
+score_list = [
+    454,
+    308,
+    305,
+    275,
+    246
 ]
 ```
 
@@ -640,12 +640,12 @@ top_scores = [
 ## A list of lists
 
 ```python
-top_drivers_and_scores = [
-    ["Max Verstappen", 322],
-    ["Charles Leclerc", 289],
-    ["Lewis Hamilton", 152],
-    ["George Russell", 90],
-    ["Lando Norris", 88]
+driver_and_score_list = [
+    ["Max Verstappen", 454],
+    ["Charles Leclerc", 308],
+    ["Sergio Perez", 305],
+    ["George Russell", 275],
+    ["Carlos Sainz", 246]
 ]
 ```
 
@@ -660,7 +660,7 @@ Use the square brackets to access items from a list.
 ## Accessing items from a list, an example
 
 ```python
-top_drivers = [
+driver_list = [
     "Max Verstappen",
     "Charles Leclerc",
     "Lewis Hamilton",
@@ -668,9 +668,9 @@ top_drivers = [
     "Lando Norris"
 ]
 
-top_drivers[0] # "Max Verstappen"
-top_drivers[1] # "Charles Leclerc"
-top_drivers[2] # "Lewis Hamilton"
+driver_list[0] # "Max Verstappen"
+driver_list[1] # "Charles Leclerc"
+driver_list[2] # "Lewis Hamilton"
 ```
 
 ---
@@ -742,19 +742,10 @@ Loops allow parts of our code to run zero or more times.
 
 ## Loops in Python
 
-<span class="center narrower">
+<span class="centered narrower">
 
-`while` loops run for as long as the condition they have been given is `True`.
-
-</span>
-
----
-
-## Loops in Python
-
-<span class="center narrower">
-
-`for` are used to iterate (to loop over) over the items in a list.
+- `while` loops run for as long as the condition is `True`.
+- `for` loops run for each item in the list.
 
 </span>
 
