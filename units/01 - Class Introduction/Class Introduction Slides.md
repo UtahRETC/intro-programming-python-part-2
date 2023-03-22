@@ -807,3 +807,116 @@ for driver_info in driver_and_score_list:
 </span>
 
 ---
+
+# Functions
+
+---
+
+## What are they?
+
+<span class="center narrower">
+
+Functions are units of code that we can re-use in our program.
+
+</span>
+
+---
+
+## Code that we can re-use
+
+<span class="center narrow">
+
+This means that instead of writing the same code multiple times, we can write it once inside of a function and re-use by calling the function.
+
+</span>
+
+---
+
+## Anatomy of a function
+
+Functions have a __name__.
+
+---
+
+## Function names
+
+<span class="center narrower">
+
+A function's name is important since we'll need to know it to make it run.
+
+</span>
+
+---
+
+## Anatomy of a function
+
+Functions can have zero or more __parameters__.
+
+---
+
+## Function parameters
+
+A function's parameters are its "inputs".
+
+---
+
+## Function parameters
+
+```python
+def show_greeting(name):
+    print("Hello " + name + ", welcome to class")
+
+show_greeting("Ryan")           # prints "Hello Ryan, welcome to class"
+show_greeting("Olivia")         # prints "Hello Olivia, welcome to class"
+```
+
+---
+
+## Anatomy of a function
+
+Functions can __return__ zero of more values.
+
+---
+
+## Function return value
+
+<span class="center narrow">
+
+A function "returns" a value with the `return` keyword.
+
+</span>
+
+---
+
+## Function return value
+
+<span class="center narrow">
+
+A function can have more than one `return` statement in its body, but it will stop running as soon as it hits the first `return`.
+
+</span>
+
+---
+
+## Function return value
+
+```python
+def show_greeting(name):
+    # Previously: print("Hello " + name + ", welcome to class")
+    return "Hello " + name + ", welcome to class"
+```
+
+---
+
+## Function return value
+
+```python
+def show_greeting(name):
+    # Previously: print("Hello " + name + ", welcome to class")
+    return "Hello " + name + ", welcome to class"
+
+greeting1 = show_greeting("Ryan")
+
+print(greeting1)                # prints "Hello Ryan, welcome to class"
+print(show_greeting("Olivia"))  # prints "Hello Olivia, welcome to class"
+```
