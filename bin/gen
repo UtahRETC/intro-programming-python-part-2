@@ -6,13 +6,15 @@ output="$2"
 if [ ! -f "$input" ]; then
   echo "error: <input> file not found ('$input')"
   exit 1
-elif [ -z "$output" ]; then
-  echo "error: missing <output> argument"
-  exit 1
+fi
+
+if [ -z "$output" ]; then
+  output="${input%.md}.pdf"
+  echo "Output: $output"
 fi
 
 case $(basename "$input") in
-  Slides.md)
+  *Slides.md)
     marp "$input" \
       --allow-local-files \
       --theme assets/slide-styles.marp \
