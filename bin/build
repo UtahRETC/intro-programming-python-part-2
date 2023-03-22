@@ -5,9 +5,15 @@ IFS=$(echo -en "\n\b")
 
 for input in $(find units -type f -not -name Overview.md -name '*.md')
 do
-  echo -n "Generating '$input' ... "
-  bin/gen "$input" "${input%.md}.pdf" &> /dev/null
-  echo "done"
+  output="${input%.md}.pdf"
+
+  if [ "$input" -nt "$output" ]; then
+    echo -n "Generating '$input' ... "
+    bin/gen "$input" "$output" &> /dev/null
+    echo "done"
+  else
+    echo "Skipping '$input'"
+  fi
 done
 
 IFS=$IFSBAK
