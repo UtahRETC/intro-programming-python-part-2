@@ -33,3 +33,7 @@ case $(basename "$input") in
       -o "$output"
     ;;
 esac
+
+if [ ! -z "$OPENIT" ]; then
+  open "$output"
+fi
