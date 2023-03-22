@@ -623,6 +623,34 @@ top_drivers = [
 
 ---
 
+## A list of integers
+
+```python
+top_scores = [
+    322,
+    289,
+    152,
+    90,
+    88
+]
+```
+
+---
+
+## A list of lists
+
+```python
+top_drivers_and_scores = [
+    ["Max Verstappen", 322],
+    ["Charles Leclerc", 289],
+    ["Lewis Hamilton", 152],
+    ["George Russell", 90],
+    ["Lando Norris", 88]
+]
+```
+
+---
+
 ## Accessing items from a list
 
 Use the square brackets to access items from a list.
