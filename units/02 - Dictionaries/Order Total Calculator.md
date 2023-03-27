@@ -4,7 +4,7 @@ title: Order Total Calculator
 
 ## Overview
 
-You are a restaurant owner. Write a program that takes a customer’s order and
+You are a restaurant owner. Write a program that takes a customer's order and
 then outputs what they ordered and the total bill. You will need to use a
 dictionary, conditionals, and loops to complete this assignment.
 

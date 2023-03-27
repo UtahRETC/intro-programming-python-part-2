@@ -21,7 +21,7 @@ These are your students and their grades:
 - Daniel, D
 
 Create a program that accepts as input a student's name. It should then output
-that student’s name and grade like this `<student name>'s grade is a/an
+that student's name and grade like this `<student name>'s grade is a/an
 <grade>`. Do not use conditionals like `if`. Instead, construct a dictionary
 whose keys are student names, and values are their corresponding grades. Then
 use that dictionary retrieve the grade of the student that was entered in.
