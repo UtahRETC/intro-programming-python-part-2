@@ -97,7 +97,7 @@ These keys and values are referred to as **key / value pairs**, and they are wha
 
 <span class="center narrow">
 
-Every **value** in a dictionary has a corresponding **key**.
+Every **value** in a dictionary is associated with a **key**.
 
 </span>
 
@@ -107,7 +107,17 @@ Every **value** in a dictionary has a corresponding **key**.
 
 <span class="center narrow">
 
-We use the **key** to manupulate the **value** in the dictionary.
+We use the **key** to access the **value** in the dictionary.
+
+</span>
+
+---
+
+## Key / value pairs
+
+<span class="center narrow">
+
+As long as we know the **key**, we can access the **value** in the dictionary.
 
 </span>
 
@@ -133,7 +143,7 @@ Many of the things we can do with a list, we can do with a dictionary as well. A
 
 <span class="center narrower">
 
-Certain tasks are better suited for a dictionary.
+Certain tasks are better suited for dictionaries.
 
 </span>
 
@@ -183,7 +193,7 @@ This can be done using the `.get` method.
 
 <span class="center narrower">
 
-The `.get` method which accepts a **key** and returns the corresponding **value**.
+The `.get` method accepts a **key** and returns the corresponding **value**.
 
 </span>
 
@@ -235,8 +245,8 @@ How can we work with dictionaries?
 
 - Adding and updating an item
 - Deleting an item
-- Checking if dictionary contains key
 - Looking up an item, an alternative
+- Checking if dictionary contains key
 
 </span>
 
@@ -253,15 +263,7 @@ driver_scores["Lewis Hamilton"] = 240
 ## Deleting an item
 
 ```python
-del driver_scores["Max Verstappen"]
-```
-
----
-
-## Checking if dictionary contains key
-
-```python
-"Kevin Magnussen" in driver_scores # returns True or False
+driver_scores.pop("Max Verstappen")
 ```
 
 ---
@@ -276,7 +278,13 @@ Alternatively, we can look up an item in a dictionary using the `[]` operator, l
 
 ---
 
-## Why checking if dictionary contains key is important
+## Looking up an item, an alternative
+
+```python
+print(driver_scores["Max Verstappen"])
+```
+
+---
 
 <span class="center narrower">
 
@@ -286,7 +294,7 @@ What happens when we try to look up a key that is not contained in the dictionar
 
 ---
 
-## Why checking if dictionary contains key is important
+## Looking up missing keys, an example
 
 ```python
 driver_scores = {
@@ -303,6 +311,114 @@ driver_scores["Kevin Magnussen"]
 #   File "<stdin>", line 1, in <module>
 # KeyError: 'Kevin Magnussen'
 ```
+
+---
+
+## Checking if dictionary contains key
+
+```python
+"Kevin Magnussen" in driver_scores # returns True or False
+```
+
+---
+
+## Why checking if dictionary contains key is important (1)
+
+```python
+driver_scores = {
+    "Max Verstappen": 454,
+    "Charles Leclerc": 308,
+    "Sergio Perez": 305,
+}
+
+if "Kevin Magnussen" in driver_scores:
+    print(driver_scores.get("Kevin Magnussen"))
+else:
+    print("Unable to find driver's score")
+```
+
+---
+
+## Why checking if dictionary contains key is important (2)
+
+```python
+driver_scores = {
+    "Max Verstappen": 454,
+    "Charles Leclerc": 308,
+    "Sergio Perez": 305,
+}
+
+driver_score = driver_scores.get("Kevin Magnussen")
+
+if driver_score is not None:
+    print(driver_score)
+else:
+    print("Unable to find driver's information")
+```
+
+---
+
+## Dictionaries do more!
+
+<span class="center">
+
+There are more operations you can perform on dictionaries, such as adding multiple items at once, getting a list with just the values, or a list with just the keys, and more.
+
+</span>
+
+---
+
+## Where can we learn more?
+
+<span class="center narrow">
+
+Check out the official Python documentation for dictionaries: https://docs.python.org/3/library/stdtypes.html#typesmapping
+
+</span>
+
+---
+
+## You can also read the documentation by running this code
+
+```python
+help(dict)
+```
+
+---
+
+## A note on keys and values
+
+<span class="center narrow">
+
+Keys are "hashed", this means they are converted by Python behind the scenes into something that can be used as a key.
+
+</span>
+
+---
+
+## A note on keys and values
+
+<span class="center">
+
+If something is not hashable, then it cannot be used as a **key** in a dictionary.
+
+</span>
+
+---
+
+## A note on keys and values
+
+<span class="center narrow">
+
+Values do not need to be hashable, meaning anything can be stored as a **value** in a dictionary.
+
+</span>
+
+---
+
+## Getting the hash of a value
+
+We can use the `hash` function to get the hash of a value.
 
 ---
 
