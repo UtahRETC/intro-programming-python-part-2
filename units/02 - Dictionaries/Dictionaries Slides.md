@@ -252,7 +252,7 @@ How can we work with dictionaries?
 
 ---
 
-## Adding an item
+## Adding and updating an item
 
 ```python
 driver_scores["Lewis Hamilton"] = 240

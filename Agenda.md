@@ -1,3 +1,14 @@
+# 2023-03-30
+
+- Continue dictionaries lesson
+- Show RPS example
+- Go over how a line of code is evaluated
+
+# 2023-03-27
+
+- Start dictionaries lesson
+- We made it to right before the "Dictionary operations" slide
+
 # 2023-03-23
 
 - Continue review
