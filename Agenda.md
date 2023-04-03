@@ -1,3 +1,8 @@
+# 2023-04-01
+
+- Finish dictionaries lesson, last part is iterating over dictionaries
+- Annotations, imports, keyword arguments
+
 # 2023-03-30
 
 - Continue dictionaries lesson
