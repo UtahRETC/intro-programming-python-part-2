@@ -1,7 +1,9 @@
 # 2023-04-01
 
-- Finish dictionaries lesson, last part is iterating over dictionaries
-- Annotations, imports, keyword arguments
+- Finish dictionaries lesson
+- Iterating dictionaries example: drivers high score search
+- Intro to Flask, web programming, The Internet
+- Show sample Flask application
 
 # 2023-03-30
 
