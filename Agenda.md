@@ -1,3 +1,12 @@
+# 2023-04-07
+
+- Review previous assignments, calculate total and print comma separated list
+- Show https://roadmap.sh/
+- Show https://exercism.org
+- URLs and routing/routes
+- Parsing a URL into parts, `from urllib.parse import urlparse`
+- Talk about how the internet routes a URL
+
 # 2023-04-01
 
 - Finish dictionaries lesson
