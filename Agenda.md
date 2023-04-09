@@ -1,3 +1,21 @@
+# 2023-04-10
+
+- Build a simple app (reintroduce flask, show working example)
+- Get a server running the app (ngrok/render)
+- Show ability to pass functions into functions (decorators)
+- Show 404 error (no routes)
+- We use their ip addresses that everyone can connect to show their website
+	- If network doesn't work, use hotspot
+- Explain URLs
+	- Show how URLs and ip addresses relate
+	- URL gets you to the machine, other parts get you to the code
+- Show them how routes work
+- They build jokes app
+	- Create Simple route
+	- (Stretch) use url parsing to select joke in list
+	- (Stretch) Return some html
+- (Filler) Roadmap.sh
+
 # 2023-04-07
 
 - Review previous assignments, calculate total and print comma separated list
