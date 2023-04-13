@@ -1,3 +1,13 @@
+# 2023-04-13
+
+- Build countries website with at least two pages (routes), and full HTML
+  responses. Use breakout rooms of 2 or 3 people.
+    - Pick country
+    - Homepage will be a overview of the country, with images to the flag and a map
+    - Second page will be about anything you'd like but must be linked to from the homepage.
+- Assign Personal Page assignment.
+- Stretch goal: discuss and/or assign Flask templates reading
+
 # 2023-04-10
 
 - Build a simple app (reintroduce flask, show working example)

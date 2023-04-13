@@ -22,6 +22,10 @@ Overview from the Web Programming unit in the last class:
 - Backend, frontend
 - Networking basics
 - Python and Flask
+- Flask templates and merge fields/code
+- Forms/user input
+- Databases/file storage
+- Cookies
 
 ## Resources
 
