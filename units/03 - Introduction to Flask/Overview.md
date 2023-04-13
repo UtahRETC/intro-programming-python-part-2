@@ -15,14 +15,16 @@ Academy assignment from last class.
 
 Overview from the Web Programming unit in the last class:
 
-- Why are we learning this?
+- DONE Why are we learning this?
+- DONE Webpages, HTML, and CSS
+- DONE Flask intro
+- DONE Templates and merge fields
+- DONE Decorators
+- DONE Keyword arguments
 - The Internet, aka "the web"
 - Browsers, servers
-- Webpages, HTML, and CSS
 - Backend, frontend
 - Networking basics
-- Python and Flask
-- Flask templates and merge fields/code
 - Forms/user input
 - Databases/file storage
 - Cookies

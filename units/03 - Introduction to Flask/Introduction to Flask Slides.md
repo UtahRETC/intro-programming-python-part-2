@@ -337,3 +337,153 @@ app.run()</code></pre>
 Decorators allow us to add functionality to out functions.
 
 ---
+
+# Templates
+
+---
+
+## Routes can return HTML
+
+```python
+@app.get("/")
+def index():
+    return """
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>Project: Recipe book</title>
+            </head>
+            <body>
+                <h1>Recipe Book</h1>
+                <h2>Contents</h2>
+
+                ...
+    """
+```
+
+---
+
+## Routes can return HTML
+
+But this can be cumbersome due to the length of the content.
+
+---
+
+## Templates
+
+<span class="center narrow">
+
+Flask provides a function named `render_template` that lets us move our HTML code into separate files.
+
+</span>
+
+---
+
+<span class="tal">
+
+**Contents of `templates/index.html`**
+
+```jinja
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Hello World!</h1>
+    </body>
+</html>
+```
+
+**Contents of `application.py`**
+
+```python
+# ...
+
+@app.get("/")
+def index():
+    return render_template("hello.html")
+
+# ...
+```
+
+</span>
+
+---
+
+## Templates
+
+<span class="center narrow">
+
+This makes working with HTML easier because it's no longer a string in our Python code.
+
+</span>
+
+---
+
+## Templates
+
+Flask templates use a library called Jinja2.
+
+---
+
+## Jinja2
+
+<span class="center narrow">
+
+Jinja2 offer functionality that lets you merge variables in into your HTML code.
+
+</span>
+
+---
+
+<span class="tal">
+
+**Contents of `templates/index.html`**
+
+```jinja
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Hello {{ name }}!</h1>
+    </body>
+</html>
+```
+
+**Contents of `application.py`**
+
+```python
+# ...
+
+@app.get("/")
+def index():
+    return render_template("hello.html", name="Marcos")
+
+# ...
+```
+
+</span>
+
+---
+
+## Keyword arguments
+
+<span class="center narrow">
+
+When you call a function in Python and pass an argument to it, you can specify the name of the argument.
+
+</span>
+
+---
+
+## Keyword arguments, an example
+
+```python
+def print_greeting(name):
+    print("Hello " + name)
+
+print_greeting("Ahmed")
+print_greeting(name="Cindy")
+
+name_to_greet = "Janira"
+print_greeting(name=name_to_greet)
+```
+
+---
