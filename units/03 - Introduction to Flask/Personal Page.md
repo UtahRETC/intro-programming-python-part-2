@@ -3,9 +3,18 @@ title: Personal Page
 ---
 
 ## Instructions
-Use Flask API to create a webpage that displays a personal page for you. Give some information about yourself that you'd like to share. Use HTML to format the text. Link to at least one image. The site should include at least two pages. Link to them from the index page.
+
+Use Flask API to create a webpage that displays __your own__ personal webpage. Give some information about yourself that you'd like to share.
+
+Your webpage must:
+- Use HTML to format the text.
+- Link to at least one image.
+- Include at least two pages.
+- Have at least two routes, an index route and a second route.
 
 ## Example
+
+\vspace{.5in}
 
 # Dwayne Johnson
 
