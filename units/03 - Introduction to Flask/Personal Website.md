@@ -1,10 +1,10 @@
 ---
-title: Personal Page
+title: Personal Website
 ---
 
 ## Instructions
 
-Use Flask API to create a webpage that displays __your own__ personal webpage. Give some information about yourself that you'd like to share. Your webpage must:
+Use Flask to create __your own__ personal webpage. Give some information about yourself that you'd like to share. Your webpage must:
 
 - Use HTML to format the text.
 - Link to at least one image.
