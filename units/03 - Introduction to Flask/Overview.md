@@ -26,6 +26,7 @@ Overview from the Web Programming unit in the last class:
 - Backend, frontend
 - Networking basics
 - Forms/user input
+- Query parameters
 - Databases/file storage
 - Cookies
 
