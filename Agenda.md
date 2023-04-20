@@ -1,3 +1,15 @@
+# 2023-04-20
+
+- Remind students about reading assignment
+- Show and tell: have students present their code from Monday
+- URLs, domain routing and Flask routing
+- Links, absolute and relative URLs
+
+# 2023-04-17
+
+- Practice day. Work on either Personal Page or Rock Paper Scissors Flask
+  application.
+
 # 2023-04-13
 
 - Build countries website with at least two pages (routes), and full HTML
