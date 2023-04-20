@@ -5,8 +5,11 @@ section {
   text-align: center;
 }
 
-pre, code {
+.code, pre, code {
   font-family: "IBM Plex Mono" !important;
+}
+
+pre, code {
   text-align: left;
 }
 
@@ -43,6 +46,11 @@ p.text,
 p.quote {
   margin: 0 auto 0 auto;
   text-align: left;
+}
+
+p.widest,
+.widest {
+  max-width: 100%;
 }
 
 p.wider,
@@ -87,6 +95,8 @@ p.narrower,
   margin: 0 auto 0 auto;
 }
 
+.mt1 { margin-top: 1em; }
+.mb1 { margin-bottom: 1em; }
 .pt1 { padding-top: 1rem; }
 .pb1 { padding-bottom: 1rem; }
 .tal { text-align: left; }
@@ -99,6 +109,9 @@ p.narrower,
 .green { color: green; }
 .blue { color: blue; }
 .red { color: red; }
+.fs7 { font-size: .7em; }
+.fs6 { font-size: .6em; }
+.ws-np { white-space: nowrap; }
 
 section::after,
 footer {

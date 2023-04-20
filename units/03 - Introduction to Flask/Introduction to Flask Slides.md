@@ -179,7 +179,7 @@ The first computer sends a **request** for some data and the second computer **r
 ---
 
 <span class="centered">
-<img src="Request Response.png" />
+<img src="assets/Request Response.png" />
 </span>
 
 ---
@@ -485,5 +485,283 @@ print_greeting(name="Cindy")
 name_to_greet = "Janira"
 print_greeting(name=name_to_greet)
 ```
+
+---
+
+# URLs and routing
+
+---
+
+## URLs and routing
+
+<span class="center narrow">
+
+Let's breakdown what URLs are, how they work, and how they are used to navigate **to** and **within** our Flask applications.
+
+</span>
+
+---
+
+## Let's start with definitions
+
+<span class="center wide">
+
+**URL**: an acronym for Uniform Resource Locator, URLs are the "address" of a resource (a webpage, a video, a photo, etc.) This resource can be in our own computer, or on another computer.
+
+</span>
+
+---
+
+## URLs are addresses
+
+URLs are addresses and they help us navigate The Internet to find and access a resource.
+
+---
+
+## URLs are addresses
+
+By typing a URL into our browser's address bar, we send a request to the web server asking for what we need and it will response with the image/video/HTML/etc. that we asked for.
+
+---
+
+<span class="centered">
+<img src="assets/Request Response.png" />
+</span>
+
+---
+
+A web server is a program that is able to accept these requests and response appropriately.
+
+---
+
+Our Flask applications are web servers.
+
+---
+
+## Example URLs
+
+<span class="centered">
+
+- https://www.google.com
+- https://www.youtube.com/watch?v=Z1RJmh_OqeA
+- https://en.wikipedia.org/wiki/Computer_programming#Programming_languages
+- https://upload.wikimedia.org/wikipedia/commons/d/df/The_Fabs.JPG
+
+</span>
+
+---
+
+<!-- _footer: 'Unit 3: Introduction to Flask (image source: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL' -->
+
+<span class="centered">
+<img src="assets/mdn-url-all.png" />
+</span>
+
+---
+
+## Scheme
+
+<div class="ws-nw fs7 code">
+<span class="highlight bold">http</span>://www.example.com:80/path/to/myfile.html?key1=value1&key2=value2#SomewhereInTheDocument
+</div>
+
+<hr />
+
+The scheme indicates the protocol that must be used when talking to the server. This of a protocol as the "language" that must be used.
+
+---
+
+## Domain
+
+<div class="ws-nw fs7 code">
+http://<span class="highlight bold">www.example.com</span>:80/path/to/myfile.html?key1=value1&key2=value2#SomewhereInTheDocument
+</div>
+
+<hr />
+
+The domain is the address for the web server that we are trying to reach.
+
+---
+
+## Domain (IP address)
+
+<div class="ws-nw fs7 code">
+http://<span class="highlight bold">159.89.240.57</span>:80/path/to/myfile.html?key1=value1&key2=value2#SomewhereInTheDocument
+</div>
+
+<hr />
+
+<span class="center wide">
+
+Since a domain corresponds to an IP address, An IP address may be used in place of the domain.
+
+</span>
+
+---
+
+## Domain (local IP address)
+
+<div class="ws-nw fs7 code">
+http://<span class="highlight bold">127.0.0.1</span>:80/path/to/myfile.html?key1=value1&key2=value2#SomewhereInTheDocument
+</div>
+
+<hr />
+
+<span class="center wide">
+
+`127.0.0.1` is the IP address for your local computer.
+
+</span>
+
+---
+
+## Domain (localhost)
+
+<div class="ws-nw fs7 code">
+http://<span class="highlight bold">localhost</span>:80/path/to/myfile.html?key1=value1&key2=value2#SomewhereInTheDocument
+</div>
+
+<hr />
+
+<span class="center wide">
+
+`localhost` is a special domain that corresponds to your local computer as well.
+
+</span>
+
+---
+
+<!-- _footer: 'Unit 3: Introduction to Flask ([1] text source: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL#authority' -->
+
+## Port
+
+<div class="ws-nw fs7 code">
+http://www.example.com:<span class="highlight bold">80</span>/path/to/myfile.html?key1=value1&key2=value2#SomewhereInTheDocument
+</div>
+
+<hr />
+
+<span class="center wide">
+
+The port indicates the technical "gate" used to access the resources on the web server. It is usually omitted if the web server uses the standard ports of the HTTP protocol (80 for HTTP and 443 for HTTPS) to grant access to its resources. <span class="fs6 code">[1]</span>
+
+</span>
+
+---
+
+## Path
+
+<div class="ws-nw fs7 code">
+http://www.example.com:80<span class="highlight bold">/path/to/myfile.html</span>?key1=value1&key2=value2#SomewhereInTheDocument
+</div>
+
+<hr />
+
+<span class="center wide">
+
+The path corresponds to the path or route of the resource on the web server.
+
+</span>
+
+---
+
+## Path
+
+<div class="ws-nw fs7 code">
+http://www.example.com:80<span class="highlight bold">/path/to/myfile.html</span>?key1=value1&key2=value2#SomewhereInTheDocument
+</div>
+
+<hr />
+
+<span class="center wide">
+
+In Flask, this is what we use `@app.route` for.
+
+</span>
+
+---
+
+## Path
+
+<div class="ws-nw fs7 code">
+http://www.example.com:80<span class="highlight bold">/path/to/myfile.html</span>?key1=value1&key2=value2#SomewhereInTheDocument
+</div>
+
+<div class="ws-nw fs7 code mt1">
+http://www.example.com:80<span class="highlight bold">/more</span>?key1=value1&key2=value2#SomewhereInTheDocument
+</div>
+
+<hr />
+
+<span class="center wide">
+
+Paths may have multiple parts, each separated by a forward slash.
+
+</span>
+
+---
+
+## Path
+
+<div class="ws-nw fs7 code">
+http://www.example.com:80<span class="highlight bold">/</span>?key1=value1&key2=value2#SomewhereInTheDocument
+</div>
+
+<hr />
+
+`/` is the default path. When you see a URL without a path, it'll default to this. This path is referred to as the "index" path.
+
+---
+
+## Parameters
+
+<div class="ws-nw fs7 code">
+http://www.example.com:80/path/to/myfile.html<span class="highlight bold">?key1=value1&key2=value2</span>#SomewhereInTheDocument
+</div>
+
+<hr />
+
+These are extra parameters (information) that is provided to the web server. These parameters are a list of key / value pairs (like a dictionary in Python) separated by `&`.
+
+---
+
+## Anchor
+
+<div class="ws-nw fs7 code">
+http://www.example.com:80/path/to/myfile.html?key1=value1&key2=value2<span class="highlight bold">#SomewhereInTheDocument</span>
+</div>
+
+<hr />
+
+This is an anchor to a section in the webpage returned by the web server. This is used by browsers to scroll right to that section in the webpage.
+
+---
+
+<!-- _footer: 'Unit 3: Introduction to Flask (image source: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL' -->
+
+<span class="centered">
+<img src="assets/mdn-url-all.png" />
+</span>
+
+<span class="centered widest mt1">
+
+- The **scheme** is used to determine which language to use when talking with the web server.
+- The **domain name** is used to reach the web server.
+- The **port** is used to pick the correct entry into the web server.
+- The **path** and **parameters** are for the web server to use for whatever it wants.
+- The **anchor** is used by the browser to scroll to the correct position.
+
+</span>
+
+---
+
+## How do URLs relate to Flask applications?
+
+<span class="centered widest mt1">
+
+- The **scheme**, **domain name**, and **port** are used to reach the web server.
+- The **path** is used by the web server (your Flask application) to determine what action it should perform and how it should respond.
+
+</span>
 
 ---

@@ -21,8 +21,9 @@ Overview from the Web Programming unit in the last class:
 - DONE Templates and merge fields
 - DONE Decorators
 - DONE Keyword arguments
+- DONE Browsers, servers
+- DONE URLs, absolute/relative
 - The Internet, aka "the web"
-- Browsers, servers
 - Backend, frontend
 - Networking basics
 - Forms/user input
