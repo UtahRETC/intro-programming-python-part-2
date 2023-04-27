@@ -22,7 +22,8 @@ Overview from the Web Programming unit in the last class:
 - DONE Keyword arguments
 - DONE Browsers, servers
 - DONE URLs, absolute/relative
-- Templates and merge fields
+- DONE Templates, embedded fields and code
+- Route variables
 - Query parameters, `request`
 - Forms/user input
 - HTTP methods, body
