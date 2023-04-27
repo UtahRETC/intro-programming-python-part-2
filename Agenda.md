@@ -1,3 +1,22 @@
+# 2023-05-04
+
+- HTTP methods, body
+
+# 2023-05-01
+
+- Query parameters, `request`
+- Forms/user input
+
+# 2023-04-27
+
+- Install Live Share plugin
+- Personal Website and Rock Paper Scissors Flask application due by next
+  Thursday for those who have not submitted the assignment they worked on.
+- Formatted strings
+- Templates and merge fields
+- Full HTML responses
+- Homework: convert Personal Website or RPS to use templates
+
 # 2023-04-20
 
 - Remind students about reading assignment
