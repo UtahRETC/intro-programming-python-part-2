@@ -18,16 +18,18 @@ Overview from the Web Programming unit in the last class:
 - DONE Why are we learning this?
 - DONE Webpages, HTML, and CSS
 - DONE Flask intro
-- DONE Templates and merge fields
 - DONE Decorators
 - DONE Keyword arguments
 - DONE Browsers, servers
 - DONE URLs, absolute/relative
-- The Internet, aka "the web"
-- Backend, frontend
-- Networking basics
+- Templates and merge fields
+- Query parameters, `request`
 - Forms/user input
-- Query parameters
+- HTTP methods, body
+- Jinja code
+- The Internet, aka "the web"
+- Networking basics
+- Backend, frontend
 - Databases/file storage
 - Cookies
 
