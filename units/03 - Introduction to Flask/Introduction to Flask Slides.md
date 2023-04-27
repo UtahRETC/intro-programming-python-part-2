@@ -395,11 +395,13 @@ Flask provides a function named `render_template` that lets us move our HTML cod
 **Contents of `application.py`**
 
 ```python
+from flask import Flask, render_template
+
 # ...
 
 @app.get("/")
 def index():
-    return render_template("hello.html")
+    return render_template("index.html")
 
 # ...
 ```
@@ -420,17 +422,31 @@ This makes working with HTML easier because it's no longer a string in our Pytho
 
 ## Templates
 
+Flask will look for your templates in the `templates`.
+
+---
+
+## Templates
+
 Flask templates use a library called Jinja2.
 
 ---
 
 ## Jinja2
 
-<span class="center narrow">
+<span class="center">
 
-Jinja2 offer functionality that lets you merge variables in into your HTML code.
+Jinja2 offers functionality that lets you embed variables in your HTML code.
 
 </span>
+
+---
+
+## Embedding variables
+
+Embedded variables must be wrapped in `{{ }}`.
+
+For example, `{{ name }}`.
 
 ---
 
@@ -454,7 +470,7 @@ Jinja2 offer functionality that lets you merge variables in into your HTML code.
 
 @app.get("/")
 def index():
-    return render_template("hello.html", name="Marcos")
+    return render_template("index.html", name="Marcos")
 
 # ...
 ```
@@ -484,6 +500,88 @@ print_greeting(name="Cindy")
 
 name_to_greet = "Janira"
 print_greeting(name=name_to_greet)
+```
+
+---
+
+## Jinja2
+
+<span class="center narrow">
+
+Jinja2 also lets you embed code (that looks a lot like regular Python code) in your templates.
+
+</span>
+
+---
+
+## Embedding code
+
+Embedding code must be wrapped in `{% %}`.
+
+For example, `{% for driver in driver_scores %}`.
+
+---
+
+<span class="tal">
+
+**Contents of `application.py`**
+
+```python
+# ...
+
+driver_scores = {
+    "Max Verstappen": 454,
+    "Charles Leclerc": 308,
+    "Sergio Perez": 305,
+    "George Russell": 275,
+    "Carlos Sainz": 246
+}
+
+@app.route("/")
+def index_route():
+    return render_template("index.html", driver_scores=driver_scores)
+
+# ...
+```
+
+</span>
+
+---
+
+<span class="tal">
+
+**Contents of `templates/index.html`**
+
+```jinja
+<body>
+    {% for driver, score in driver_scores.items() %}
+        {% if score > 300 %}
+        <div class="winning">{{ driver }}: {{ score }}</div>
+        {% else %}
+        <div class="losing">{{ driver }}: {{ score }}</div>
+        {% endif %}
+    {% endfor %}
+</body>
+```
+
+</span>
+
+---
+
+## Embedded code samples
+
+```jinja
+{% for name in student_list %}
+  {{ name }}
+{% endfor %}
+
+{% if score > 100 %}
+    Wow you're amazing!
+{% elif score > 90 %}
+    You're getting an A!
+{% else %}
+    Keep at it!
+{% endif %}
 ```
 
 ---
@@ -763,5 +861,122 @@ This is an anchor to a section in the webpage returned by the web server. This i
 - The **path** is used by the web server (your Flask application) to determine what action it should perform and how it should respond.
 
 </span>
+
+---
+
+# Links
+
+---
+
+## Links
+
+<span class="center wide">
+
+In HTML, links are created with the Anchor tag (`a`) and have an `href` attribute with the URL we would like to link to.
+
+</span>
+
+<hr />
+
+```html
+<a href="https://google.com">Click here to go to Google.com</a>
+```
+
+---
+
+## Href attribute
+
+You can use any valid URL in the `href` attribute.
+
+<hr />
+
+```html
+<a href="https://www.google.com/search?q=Python">Click here to go to search for "Python"</a>
+```
+
+---
+
+## Absolute URLs
+
+<span class="center wide">
+
+When a URL includes all of the usual parts (scheme, domain, port, path, etc.), it is referred to as an _absolute URL_.
+
+</span>
+
+<hr />
+
+`https://www.google.com/search?q=Python`
+
+---
+
+## Relative URLs
+
+<span class="center">
+
+URLs that only include the path, query, and anchor are referred to as _relative URLs_.
+
+</span>
+
+<hr />
+
+`/search?q=Python`
+
+---
+
+## Relative URLs
+
+`/search?q=Python`
+
+<hr />
+
+<span class="centered">
+<img src="assets/mdn-url-all.png" />
+</span>
+
+---
+
+## Relative URLs
+
+<span class="center wide">
+
+The parts of a relative URL that are left out (like the domain), are taken from the existing webpage that you are on.
+
+</span>
+
+---
+
+## Relative URLs
+
+<span class="center">
+
+This means that when you are on `https://google.com`, when a user clicks on a link for `/search?q=Python` they will be taken to `https://google.com/search?q=Python`.
+
+</span>
+
+---
+
+## Absolute vs. relative
+
+<span class="centered">
+
+- Absolute: `https://www.google.com/search?q=Python`
+- Relative: `/search?q=Python`
+
+</span>
+
+---
+
+## URLs in anchor tags
+
+You can use both absolute and relative URLs in anchor tags.
+
+<hr />
+
+```html
+<a href="https://www.google.com/search?q=Python">Search Google</a>
+
+<a href="/search?q=Python">Search Google</a>
+```
 
 ---
