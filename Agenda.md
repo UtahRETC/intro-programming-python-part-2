@@ -4,8 +4,11 @@
 
 # 2023-05-01
 
-- Query parameters, `request`
-- Forms/user input
+- Review of URL's and query parameters
+- Review of HTTP focusing on GET requests
+- The request Class and how it maps over to http fields
+- Query parameters and `request.args`
+- Forms/user input and `request.form`
 
 # 2023-04-27
 
