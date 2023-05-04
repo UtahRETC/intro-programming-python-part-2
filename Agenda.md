@@ -1,6 +1,32 @@
-# 2023-05-04
+# 2023-05-15 (Brady)
 
-- HTTP methods, body
+- Continue File IO unit
+- Reading, writing, closing Files with Python
+- Python File operations
+- Serializing data with Python
+- File open modes (read, write, append, truncate)
+
+# 2023-05-11 (Nephi)
+
+- Beginning of File IO unit
+- What is a file?
+- Why store data in files
+- Encoding/serialization, JSON
+- Reading data from disk, hexdump
+- Reading, writing, closing Files with Python
+
+# 2023-05-08 (Marcos)
+
+- HTTP request basics, request methods, request body
+- Specifying request method in Flask routes
+- Using request body data in Flask routes
+- Making HTTP requests with Python and `curl`
+- Flask route parameters
+
+# 2023-05-04 (Marcos)
+
+- Project day, menu building website, we'll provide students with the function
+  they'll need to read/write menu data from a file
 
 # 2023-05-01
 

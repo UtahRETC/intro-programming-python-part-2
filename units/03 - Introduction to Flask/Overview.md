@@ -23,15 +23,14 @@ Overview from the Web Programming unit in the last class:
 - DONE Browsers, servers
 - DONE URLs, absolute/relative
 - DONE Templates, embedded fields and code
+- DONE Query parameters, `request`
+- DONE Forms/user input
+- DONE Jinja code
 - Route variables
-- Query parameters, `request`
-- Forms/user input
 - HTTP methods, body
-- Jinja code
 - The Internet, aka "the web"
 - Networking basics
 - Backend, frontend
-- Databases/file storage
 - Cookies
 
 ## Resources
