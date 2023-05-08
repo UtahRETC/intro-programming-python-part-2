@@ -21,7 +21,6 @@
 - Specifying request method in Flask routes
 - Using request body data in Flask routes
 - Making HTTP requests with Python and `curl`
-- Flask route parameters
 
 # 2023-05-04 (Marcos)
 

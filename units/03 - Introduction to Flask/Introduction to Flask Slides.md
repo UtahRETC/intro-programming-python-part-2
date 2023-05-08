@@ -980,3 +980,130 @@ You can use both absolute and relative URLs in anchor tags.
 ```
 
 ---
+
+# HTTP / HTTPS
+
+---
+
+HTTP and HTTPS are the primary protocols used in The Web.
+
+---
+
+<span class="centered">
+<img src="assets/Request Response.png" />
+</span>
+
+---
+
+HTTP stands for _Hypertext Transfer Protocol_, and HTTPS stands for _Hypertext Transfer Protocol Secure_.
+
+---
+
+HTTP is a text protocol, meaning we can look at the contents of a request.
+
+---
+
+## Sample HTTP request
+
+<pre><code>GET /wiki/HTTP HTTP/2
+Host: en.wikipedia.org
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) ...</code></pre>
+
+---
+
+## The URL host and path
+
+<pre><code>GET <b class="highlight">/wiki/HTTP</b> HTTP/2
+Host: <b class="highlight">en.wikipedia.org</b>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) ...</code></pre>
+
+---
+
+## The HTTP method
+
+<pre><code><b class="highlight">GET</b> /wiki/HTTP HTTP/2
+Host: en.wikipedia.org
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) ...</code></pre>
+
+---
+
+## HTTP methods
+
+<span class="centered">
+
+- <b><code>GET</code></b>, requests a representation of the specified resource. Requests using GET should only retrieve data.
+- <code>HEAD</code>, asks for a response identical to a GET request, but without the response body.
+- <b><code>POST</code></b>, submits an entity to the specified resource, often causing a change in state or side effects on the server.
+- <b><code>PUT</code></b>, replaces all current representations of the target resource with the request payload.
+- <b><code>DELETE</code></b>, deletes the specified resource.
+- <code>CONNECT</code>, establishes a tunnel to the server identified by the target resource.
+- <code>OPTIONS</code>, describes the communication options for the target resource.
+- <code>TRACE</code>, performs a message loop-back test along the path to the target resource.
+- <code>PATCH</code>, applies partial modifications to a resource.
+
+</span>
+
+<!-- _footer: 'Unit 3: Introduction to Flask (source: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)' -->
+
+---
+
+## Sample HTTP response
+
+<pre><code>HTTP/2 200
+Content-Type: text/html; charset=UTF-8
+Last-Modified: Mon, 08 May 2023 11:41:03 GMT
+Age: 33352
+Content-Encoding: gzip
+Content-Language: en
+Date: Mon, 08 May 2023 11:42:37 GMT
+Content-Length: 63200
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;&lt;head&gt;...</code></pre>
+
+---
+
+## Response code
+
+<pre><code>HTTP/2 <b class="highlight">200</b>
+Content-Type: text/html; charset=UTF-8
+Last-Modified: Mon, 08 May 2023 11:41:03 GMT
+Age: 33352
+Content-Encoding: gzip
+Content-Language: en
+Date: Mon, 08 May 2023 11:42:37 GMT
+Content-Length: 63200
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;&lt;head&gt;...</code></pre>
+
+---
+
+## HTTP response status codes
+
+<span class="centered">
+
+- 100 to 199, Informational responses
+- 200 to 299, Successful responses
+    - `200 OK`
+- 300 to 399, Redirection messages
+    - `301 Moved Permanently`, `302 Found`
+- 400 to 499, Client error responses
+    - `400 Bad Request`, `404 Not Found`
+- 500 to 599, Server error responses
+    - `500 Internal Server Error`, `502 Bad Gateway`
+
+</span>
+
+<!-- _footer: 'Unit 3: Introduction to Flask (source: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)' -->
+
+---
