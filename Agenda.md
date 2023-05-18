@@ -1,3 +1,7 @@
+# 2023-05-18
+
+- File IO and encoding review
+
 # 2023-05-15 (Brady)
 
 - Continue File IO unit
