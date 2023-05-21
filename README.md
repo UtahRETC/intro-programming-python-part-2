@@ -33,18 +33,18 @@ and how can we store it in a file that we later reload into memory. After
 learning about reading and writing state to files, we can discuss databases and
 their application in larger programs.
 
-### Unit 5: Classes
+### Unit 5: Error handling
+
+Basics of error handling and why it's needed in program. Learn about errors
+resulting from user inputs vs. application errors. Learn about detecting and
+recovering from errors.
+
+### Unit 6: Classes
 
 In this unit we will learn about classes in Python. We’ll cover their basic
 functionality, the concept of encapsulation and when and why it’s useful, and
 also talk about how we’ve already been using classes (Flash,
 int/string/float/etc.)
-
-### Unit 6: Error handling
-
-Basics of error handling and why it's needed in program. Learn about errors
-resulting from user inputs vs. application errors. Learn about detecting and
-recovering from errors.
 
 ### Unit 7: Modules
 
