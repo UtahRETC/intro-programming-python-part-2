@@ -1,3 +1,24 @@
+# 2023-06-05
+
+- Continue Error handling unit (Brady and Marcos)
+- Throw
+
+# 2023-06-01
+
+- Start of Error handling unit (Nephi)
+- Exceptions, try/catch
+
+# 2023-05-25
+
+- Continue review of execution model (Marcos)
+- Project walkthrough (Nephi)
+
+# 2023-05-22
+
+- Finish File IO and encoding practice (Brady)
+- Review of execution model (Marcos)
+- Remind students of assignments
+
 # 2023-05-18
 
 - File IO and encoding review
