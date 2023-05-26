@@ -546,7 +546,7 @@ function_call ::= <comp_expression> "(" <expression> "," <expression> "," ... ")
 
 ---
 
-## Operator precedence
+## Partial operator precedence
 
 <table>
 <tr><th>Order</th><th>Operator</th><th>Description</th></tr>
@@ -561,7 +561,7 @@ function_call ::= <comp_expression> "(" <expression> "," <expression> "," ... ")
 
 ---
 
-## Operator precedence (cont.)
+## Partial operator precedence (cont.)
 
 <table>
 <tr><th>Order</th><th>Operator</th><th>Description</th></tr>
