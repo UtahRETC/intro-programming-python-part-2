@@ -4,8 +4,6 @@
 
 # 2023-06-22
 
-# 2023-06-19
-
 -   Instances vs. classes
 -   Initializers
 -   Data and methods
