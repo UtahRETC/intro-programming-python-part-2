@@ -2,6 +2,7 @@
 
 ## Requirements
 
+- [LaTeX](https://www.latex-project.org/get/)
 - [Marp](https://github.com/marp-team/marp-cli#install)
 - [Pandoc](https://pandoc.org/installing.html)
 
