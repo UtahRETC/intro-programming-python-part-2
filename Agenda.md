@@ -12,7 +12,7 @@
 - Continue class overview
 - Discuss encapsulation of state and behavior
 - Work on Vehicle class both as a class and individually
-  - Vehicle class
+- Vehicle class
     - Takes mpg and gasoline gallons in tank
     - Methods are drive and fill-up. Both alter how much gas there's in the tank.
     - Practice: add odometer
