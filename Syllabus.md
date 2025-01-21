@@ -12,13 +12,13 @@ title: Intermediate Python class syllabus
 \textbf{Course title} & Intermediate Python \\
 \textbf{Prerequisites} & Passing grade in Introduction to Programming with Python. \\
 \textbf{Schedule} & Monday (in person) and Thursday (remote) 6:00pm to 7:30pm. \\
-\textbf{Course length} & 15 weeks, last day is June 29th \\
+\textbf{Course length} & 15 weeks \\
 \hline
 \end{tabular}
 \end{center}
 \egroup
 
-\vspace{.2in}
+\vspace{.3in}
 
 ## Overview
 
@@ -32,9 +32,15 @@ The objective of this class is to reinforce your knowledge of programming by tea
 
 Homework assignments will be assigned every week. Assignments should be submitted via Canvas. The assignment's due date and requirements will be detailed in Canvas as well.
 
+## Assessments and final exam
+
+There will be an assessment at the end of every unit and a final exam at the end of the class.
+
 ## Grade requirements
 
-A minimum of 70% is required to pass this class. There are no tests or quizzes, grades are 100% based on homework assignments.
+A minimum of 70% is required to pass this class. Your grade will be made up of a combination of the homework, unit assess, and final exam.
+
+\pagebreak
 
 \begin{multicols}{2}
 \subsection{How can you succeed in this class?}
@@ -58,8 +64,6 @@ A minimum of 70% is required to pass this class. There are no tests or quizzes, 
 \end{itemize}
 \end{multicols}
 
-
-\pagebreak
 
 ## Outline *
 
@@ -107,6 +111,6 @@ As projects grow in size and complexity, they are broken up into multiple
 files. In Python, each file of a program is module. We'll learn about how to
 create and work with our own modules.
 
-\vspace{.2in}
+\vspace{.05in}
 
 \* _The order in which units are covered may change depending on how the class is progressing._
