@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Cat Facts!</title>
+        <style>
+            body {
+                background-color: #f9faff;
+                text-align: center;
+            }
+
+            .cat-fact img {
+                width: 30vw;
+            }
+
+            .cat-fact {
+                font-size: 2em;
+                margin: 10vh auto 10px auto;
+                width: 35%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cat-fact">
+            <img src="{{ image_url }}" />
+            <div>ID: {{ id }}</div>
+            <div>{{ description or "" }}</div>
+        </div>
+    </body>
+</html>
