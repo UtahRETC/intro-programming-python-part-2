@@ -10,3 +10,11 @@ recovering from errors.
 - Builtin exceptions
 - Custom exceptions
 - Using a Builtin vs. a Custom exception class
+- Control flow with exceptions
+- Exceptions vs. alternative error reporting methods
+
+
+## Exercises
+
+- Tic tac toe with custom exceptions
+- Password validation with exceptions vs. error list
